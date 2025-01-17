@@ -1,14 +1,9 @@
 export default {
-  spec_dir: "spec",
-  spec_files: [
-    "**/*[sS]pec.?(m)js"
+  "spec_dir": "spec",
+  "spec_files": [
+    "**/*.test.js" // Configure Jasmine pour chercher les fichiers *.test.js
   ],
-  helpers: [
-    "helpers/**/*.?(m)js"
-  ],
-  env: {
-    stopSpecOnExpectationFailure: false,
-    random: true,
-    forbidDuplicateNames: true
-  }
+  "helpers": [
+    "helpers/**/*.js"
+  ]
 }
