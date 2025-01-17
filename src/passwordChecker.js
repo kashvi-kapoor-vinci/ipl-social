@@ -12,7 +12,12 @@ class PasswordValidator {
     hasNumber(password) {
     const numberPattern = /\d/; 
     return numberPattern.test(password);
-  }
+    }
+
+    containsIPL(password) {
+    const regex = /ipl/i;
+    return regex.test(password);
+    }
   }
 
   module.exports = PasswordValidator;
