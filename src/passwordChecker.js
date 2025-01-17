@@ -1,4 +1,14 @@
 class PasswordValidator {
+
+    validate(password) {
+        const hasMinLength = this.hasMinimumLength(password);
+        const hasSpecialChar = this.hasSpecialCharacter(password);
+        const hasNumber = this.hasNumber(password);
+        const containsIpl = this.containsIPL(password);
+        
+        return hasMinLength && (hasSpecialChar || hasNumber) && !containsIpl;
+      }
+    
   
     hasMinimumLength(password) {
       return password.length >= 8;
