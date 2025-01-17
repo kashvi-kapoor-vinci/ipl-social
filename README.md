@@ -1,22 +1,35 @@
 # IPL Social
 
-## Auteur
-- **Nom** : Kapoor
-- **Prénom** : Kashvi
-- **Email** : kashvi.kapoor@student.vinci.be
+## Author
+- **Name**: Kashvi Kapoor
+- **Email**: kashvi.kapoor@student.vinci.be
 
-## URL GitHub du Projet
-https://github.com/kashvi-kapoor-vinci/ipl-social.git
+## GitHub Repository URL
+[https://github.com/kashvi-kapoor-vinci/ipl-social.git](https://github.com/kashvi-kapoor-vinci/ipl-social.git)
 
 ## Description
-Ce projet met en place un environnement **DevOps** basé sur **GitHub Actions**. Il inclut :
-- Un pipeline de CI.
-- Une fonction JavaScript pour la validation des mots de passe (**passwordChecker.js**) respectant les critères suivants :
-  - Minimum 8 caractères.
-  - Au moins un caractère spécial.
-  - Au moins un chiffre.
-  - Interdiction de contenir "IPL" (sans distinction de casse).
-- Les tests de la fonction sont implémentés avec la méthode **TDD** dans le fichier **passwordChecker.test.js**.
+This project sets up a **DevOps** environment using **GitHub Actions**. It includes:
+- A **CI pipeline**.
+- A JavaScript function for password validation (**passwordChecker.js**) that checks the following criteria:
+  - Minimum 8 characters.
+  - At least one special character.
+  - At least one digit.
+  - **Prohibition of containing "IPL"** (case-insensitive).
+- Tests for the function are implemented using **TDD** in the file **passwordChecker.test.js**.
 
-## Lancer les Tests
-npm test
+## Run the Tests
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/kashvi-kapoor-vinci/ipl-social.git
+    cd ipl-social
+    ```
+
+2. Install the dependencies:
+    ```bash
+    npm install
+    ```
+
+3. Run the tests:
+    ```bash
+    npm test
+    ```
